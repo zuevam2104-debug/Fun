@@ -462,14 +462,27 @@ img {
 .hero-skate {
   position: absolute;
   left: 50%;
-  top: 46%;
-  width: min(74%, 400px);
+  top: 42%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  filter: drop-shadow(0 18px 35px rgba(4, 15, 30, 0.35));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+
+  font-size: 92px;
+  line-height: 1;
+
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+
   animation: floatSkate 5s ease-in-out infinite;
 }
-
 .hero-note {
   position: relative;
   z-index: 2;
@@ -625,8 +638,8 @@ img {
 }
 
 @keyframes floatSkate {
-  0%, 100% { transform: translate(-50%, -50%) rotate(-3deg); }
-  50% { transform: translate(-50%, -53%) rotate(2deg); }
+  0%, 100% { transform: translate(-50%, -50%) translateY(0) rotate(-4deg); }
+  50% { transform: translate(-50%, -50%) translateY(-10px) rotate(4deg); }
 }
 
 @keyframes sparkle {
