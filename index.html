@@ -1,57 +1,325 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>Ветеринарная клиника</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Прыжки в фигурном катании</title>
+  <meta name="description" content="Красивый mobile-first сайт о прыжках в фигурном катании: простые объяснения, как различать прыжки и интересные факты." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="page-bg"></div>
 
-<header>
-<h1>Ветеринарная клиника "Добрый Пёс"</h1>
+  <header class="hero container">
+    <nav class="nav">
+      <div class="logo">⛸ Ice Jump Guide</div>
+      <a class="nav-btn" href="#jumps">Смотреть прыжки</a>
+    </nav>
 
-<nav>
-<a href="index.html">Главная</a>
-<a href="services.html">Услуги</a>
-<a href="doctors.html">Врачи</a>
-<a href="prices.html">Цены</a>
-<a href="contacts.html">Контакты</a>
-</nav>
-</header>
+    <div class="hero__content">
+      <div class="hero__text">
+        <span class="badge">Просто • Красиво • Mobile first</span>
+        <h1>Прыжки в фигурном катании — простыми словами</h1>
+        <p>
+          На этой странице собраны самые известные прыжки: что это такое,
+          как их различать и на что смотреть во время проката.
+          Без сложных терминов — только понятные объяснения.
+        </p>
 
-<section class="hero">
-<h2>Забота о здоровье ваших питомцев</h2>
-<p>Профессиональная ветеринарная помощь</p>
-<button>Записаться</button>
-</section>
+        <div class="hero__actions">
+          <a href="#difference" class="btn btn--primary">Как различать прыжки</a>
+          <a href="#facts" class="btn btn--secondary">Интересные факты</a>
+        </div>
 
-<section class="info">
-<h2>Почему выбирают нас</h2>
+        <div class="stats">
+          <article class="stat-card">
+            <strong>6</strong>
+            <span>основных прыжков</span>
+          </article>
+          <article class="stat-card">
+            <strong>1</strong>
+            <span>самый узнаваемый — аксель</span>
+          </article>
+          <article class="stat-card">
+            <strong>∞</strong>
+            <span>красоты на льду</span>
+          </article>
+        </div>
+      </div>
 
-<div class="cards">
+      <div class="hero__visual" aria-hidden="true">
+        <div class="skater-card glass">
+          <div class="orbit orbit--1"></div>
+          <div class="orbit orbit--2"></div>
+          <div class="skater">⛸</div>
+          <p>Секрет распознавания прыжков:</p>
+          <strong>смотри на толчок, ребро и направление.</strong>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<div class="card">
-<h3>Опытные врачи</h3>
-<p>Лучшие специалисты</p>
-</div>
+  <main>
+    <section class="section container" id="about">
+      <div class="section-title">
+        <span>Что важно понять сначала</span>
+        <h2>Все прыжки отличаются тем, как фигурист отталкивается ото льда</h2>
+      </div>
 
-<div class="card">
-<h3>Современное оборудование</h3>
-<p>Точная диагностика</p>
-</div>
+      <div class="info-grid">
+        <article class="info-card glass">
+          <h3>Рёберные прыжки</h3>
+          <p>
+            Фигурист отталкивается ребром конька, без помощи зубца.
+            К ним относятся сальхов, риттбергер и аксель.
+          </p>
+        </article>
+        <article class="info-card glass">
+          <h3>Зубцовые прыжки</h3>
+          <p>
+            Здесь спортсмен помогает себе зубцом конька.
+            Это тулуп, флип и лутц.
+          </p>
+        </article>
+        <article class="info-card glass">
+          <h3>Главная подсказка</h3>
+          <p>
+            Если хочешь быстро различать прыжки, сначала научись узнавать аксель,
+            а потом — видеть разницу между флипом и лутцем.
+          </p>
+        </article>
+      </div>
+    </section>
 
-<div class="card">
-<h3>Любовь к животным</h3>
-<p>Бережный подход</p>
-</div>
+    <section class="section container" id="jumps">
+      <div class="section-title">
+        <span>Основные прыжки</span>
+        <h2>6 прыжков, которые чаще всего видят зрители</h2>
+      </div>
 
-</div>
-</section>
+      <div class="jump-grid">
+        <article class="jump-card glass accent-blue">
+          <div class="jump-card__top">
+            <span class="jump-tag">Зубцовый</span>
+            <span class="jump-icon">❄️</span>
+          </div>
+          <h3>Тулуп</h3>
+          <p>
+            Один из самых популярных прыжков. Фигурист едет назад и помогает себе
+            зубцом свободной ноги.
+          </p>
+          <ul>
+            <li><strong>Как узнать:</strong> вход обычно выглядит довольно компактно и быстро.</li>
+            <li><strong>Проще запомнить так:</strong> «подколол лёд зубцом и взлетел».</li>
+          </ul>
+        </article>
 
-<footer>
-<p>© 2026 Ветеринарная клиника</p>
-</footer>
+        <article class="jump-card glass accent-pink">
+          <div class="jump-card__top">
+            <span class="jump-tag">Рёберный</span>
+            <span class="jump-icon">✨</span>
+          </div>
+          <h3>Сальхов</h3>
+          <p>
+            Прыжок с ребра. Часто выглядит более «раскрытым» во входе, потому что
+            свободная нога помогает сделать мах.
+          </p>
+          <ul>
+            <li><strong>Как узнать:</strong> заметен мах ногой перед отрывом.</li>
+            <li><strong>Проще запомнить так:</strong> «махнул ногой — полетел».</li>
+          </ul>
+        </article>
 
+        <article class="jump-card glass accent-lilac">
+          <div class="jump-card__top">
+            <span class="jump-tag">Рёберный</span>
+            <span class="jump-icon">🌙</span>
+          </div>
+          <h3>Риттбергер</h3>
+          <p>
+            Красивый прыжок, который часто смотрится очень плавно. Выполняется с хода назад,
+            без помощи зубца.
+          </p>
+          <ul>
+            <li><strong>Как узнать:</strong> вход выглядит собранным, будто фигурист «закручивает» себя сам.</li>
+            <li><strong>Проще запомнить так:</strong> «прыжок из скрутки».</li>
+          </ul>
+        </article>
+
+        <article class="jump-card glass accent-gold">
+          <div class="jump-card__top">
+            <span class="jump-tag">Зубцовый</span>
+            <span class="jump-icon">💫</span>
+          </div>
+          <h3>Флип</h3>
+          <p>
+            Прыжок с внутреннего ребра и с помощью зубца. Часто его путают с лутцем,
+            потому что внешне они похожи.
+          </p>
+          <ul>
+            <li><strong>Как узнать:</strong> толчок идёт с внутреннего ребра.</li>
+            <li><strong>Проще запомнить так:</strong> «внутрь — значит, скорее флип».</li>
+          </ul>
+        </article>
+
+        <article class="jump-card glass accent-mint">
+          <div class="jump-card__top">
+            <span class="jump-tag">Зубцовый</span>
+            <span class="jump-icon">🧊</span>
+          </div>
+          <h3>Лутц</h3>
+          <p>
+            Один из самых эффектных прыжков. Делается с внешнего ребра и тоже с помощью зубца.
+          </p>
+          <ul>
+            <li><strong>Как узнать:</strong> длинный заход назад и толчок с внешнего ребра.</li>
+            <li><strong>Проще запомнить так:</strong> «длинный красивый заход — часто лутц».</li>
+          </ul>
+        </article>
+
+        <article class="jump-card glass accent-coral">
+          <div class="jump-card__top">
+            <span class="jump-tag">Рёберный</span>
+            <span class="jump-icon">🚀</span>
+          </div>
+          <h3>Аксель</h3>
+          <p>
+            Самый известный прыжок. Он единственный начинается с движения вперёд,
+            поэтому его легче заметить даже новичку.
+          </p>
+          <ul>
+            <li><strong>Как узнать:</strong> фигурист заходит в прыжок лицом вперёд.</li>
+            <li><strong>Проще запомнить так:</strong> «вперёд — значит аксель».</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="difference">
+      <div class="section-title">
+        <span>Как различать</span>
+        <h2>Мини-шпаргалка для зрителя</h2>
+      </div>
+
+      <div class="steps">
+        <article class="step glass">
+          <span class="step-num">01</span>
+          <h3>Смотри, едет фигурист вперёд или назад</h3>
+          <p>
+            Если вход идёт вперёд, это почти наверняка аксель.
+            Остальные прыжки чаще начинаются с движения назад.
+          </p>
+        </article>
+
+        <article class="step glass">
+          <span class="step-num">02</span>
+          <h3>Замечай, помогает ли зубец</h3>
+          <p>
+            Если видно «укол» зубцом в лёд, перед тобой, скорее всего,
+            тулуп, флип или лутц.
+          </p>
+        </article>
+
+        <article class="step glass">
+          <span class="step-num">03</span>
+          <h3>Сравнивай флип и лутц по ребру</h3>
+          <p>
+            Это самая частая путаница. Если очень грубо:
+            флип — внутреннее ребро, лутц — внешнее.
+          </p>
+        </article>
+
+        <article class="step glass">
+          <span class="step-num">04</span>
+          <h3>Обращай внимание на характер входа</h3>
+          <p>
+            Сальхов часто идёт с заметным махом ногой, риттбергер выглядит
+            плавным и «закрученным», лутц — длинным и уверенным.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="compare">
+      <div class="section-title">
+        <span>Быстрое сравнение</span>
+        <h2>Самые удобные ассоциации для запоминания</h2>
+      </div>
+
+      <div class="compare-grid">
+        <article class="compare-card glass">
+          <h3>Аксель</h3>
+          <p>Единственный прыжок с заходом вперёд.</p>
+        </article>
+        <article class="compare-card glass">
+          <h3>Сальхов</h3>
+          <p>Часто узнаётся по маху ногой перед отрывом.</p>
+        </article>
+        <article class="compare-card glass">
+          <h3>Риттбергер</h3>
+          <p>Плавный и собранный, без помощи зубца.</p>
+        </article>
+        <article class="compare-card glass">
+          <h3>Тулуп</h3>
+          <p>Быстрый зубцовый прыжок с хода назад.</p>
+        </article>
+        <article class="compare-card glass">
+          <h3>Флип</h3>
+          <p>Похож на лутц, но идёт с внутреннего ребра.</p>
+        </article>
+        <article class="compare-card glass">
+          <h3>Лутц</h3>
+          <p>Похож на флип, но идёт с внешнего ребра и длинного захода.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="facts">
+      <div class="section-title">
+        <span>Интересные факты</span>
+        <h2>Немного того, что делает фигурное катание ещё интереснее</h2>
+      </div>
+
+      <div class="facts-grid">
+        <article class="fact-card glass">
+          <span>01</span>
+          <p>Аксель выделяется тем, что начинается с движения вперёд, поэтому в нём на пол-оборота больше, чем кажется.</p>
+        </article>
+        <article class="fact-card glass">
+          <span>02</span>
+          <p>Названия многих прыжков произошли от фамилий фигуристов, которые их придумали или прославили.</p>
+        </article>
+        <article class="fact-card glass">
+          <span>03</span>
+          <p>Для зрителя прыжок может длиться мгновение, но спортсмены годами учат правильный заход и приземление.</p>
+        </article>
+        <article class="fact-card glass">
+          <span>04</span>
+          <p>Красота прыжка — это не только высота, но и лёгкость входа, чистое вращение в воздухе и мягкое приземление.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="tips">
+      <div class="tips glass">
+        <div>
+          <span class="badge badge--soft">Совет новичку</span>
+          <h2>Попробуй смотреть прокаты с одной целью</h2>
+          <p>
+            Например, сегодня замечай только аксели, завтра — только лутцы.
+            Так глаз очень быстро начнёт видеть разницу между прыжками.
+          </p>
+        </div>
+        <a class="btn btn--primary" href="#top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">Наверх</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>Сделано с любовью к фигурному катанию ⛸</p>
+  </footer>
 </body>
 </html>
