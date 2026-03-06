@@ -12,7 +12,26 @@
 </head>
 <body>
   <div class="page-bg"></div>
+<div class="parallax-ice" aria-hidden="true">
+  <div class="ice-layer ice-layer--back"></div>
+  <div class="ice-layer ice-layer--middle"></div>
+  <div class="ice-layer ice-layer--front"></div>
+</div>
 
+<div class="hero__visual"></div>
+  <span class="snowflake">❄</span>
+  <span class="snowflake">❅</span>
+  <span class="snowflake">❆</span>
+  <span class="snowflake">✦</span>
+  <span class="snowflake">❄</span>
+  <span class="snowflake">❅</span>
+  <span class="snowflake">❆</span>
+  <span class="snowflake">✦</span>
+  <span class="snowflake">❄</span>
+  <span class="snowflake">❅</span>
+  <span class="snowflake">❆</span>
+  <span class="snowflake">✦</span>
+</div>
   <header class="hero container" id="top">
     <nav class="nav">
       <div class="logo">⛸ Ice Jump Guide</div>
@@ -299,7 +318,121 @@
         </article>
       </div>
     </section>
+<section class="section container" id="interactive">
+  <div class="section-title">
+    <span>Интерактив</span>
+    <h2>Посмотри, как отличаются прыжки</h2>
+  </div>
 
+  <div class="interactive-layout">
+    <article class="jump-map glass">
+      <div class="jump-map__head">
+        <h3>Интерактивная схема прыжков</h3>
+        <p>Нажми на карточку, чтобы увидеть тип прыжка и его главный признак.</p>
+      </div>
+
+      <div class="jump-map__grid">
+        <button class="jump-node is-active" data-jump="axel" type="button">
+          <span class="jump-node__icon">🚀</span>
+          <span class="jump-node__name">Аксель</span>
+        </button>
+
+        <button class="jump-node" data-jump="salchow" type="button">
+          <span class="jump-node__icon">✨</span>
+          <span class="jump-node__name">Сальхов</span>
+        </button>
+
+        <button class="jump-node" data-jump="loop" type="button">
+          <span class="jump-node__icon">🌙</span>
+          <span class="jump-node__name">Риттбергер</span>
+        </button>
+
+        <button class="jump-node" data-jump="toe" type="button">
+          <span class="jump-node__icon">❄️</span>
+          <span class="jump-node__name">Тулуп</span>
+        </button>
+
+        <button class="jump-node" data-jump="flip" type="button">
+          <span class="jump-node__icon">💫</span>
+          <span class="jump-node__name">Флип</span>
+        </button>
+
+        <button class="jump-node" data-jump="lutz" type="button">
+          <span class="jump-node__icon">🧊</span>
+          <span class="jump-node__name">Лутц</span>
+        </button>
+      </div>
+
+      <div class="jump-map__info" id="jumpInfo">
+        <span class="mini-badge">Аксель</span>
+        <h4>Самый узнаваемый прыжок</h4>
+        <p>Аксель начинается с движения вперёд. Именно поэтому его легче всего заметить даже новичку.</p>
+        <ul>
+          <li><strong>Тип:</strong> рёберный</li>
+          <li><strong>Главный признак:</strong> заход вперёд</li>
+          <li><strong>Ассоциация:</strong> «разгон и взлёт»</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="spin-demo glass">
+      <div class="spin-demo__head">
+        <h3>Анимация вращения прыжка</h3>
+        <p>Переключай количество оборотов и смотри, как ускоряется вращение.</p>
+      </div>
+
+      <div class="spin-stage">
+        <div class="approach-arc approach-arc--1"></div>
+        <div class="approach-arc approach-arc--2"></div>
+        <div class="spin-ring spin-ring--outer"></div>
+        <div class="spin-ring spin-ring--inner"></div>
+        <div class="skater-spinner" id="skaterSpinner">⛸️</div>
+      </div>
+
+      <div class="spin-controls">
+        <button class="spin-btn is-active" data-rotations="1" type="button">1 оборот</button>
+        <button class="spin-btn" data-rotations="2" type="button">2 оборота</button>
+        <button class="spin-btn" data-rotations="3" type="button">3 оборота</button>
+        <button class="spin-btn" data-rotations="4" type="button">4 оборота</button>
+      </div>
+
+      <div class="spin-readout" id="spinReadout">
+        Сейчас показан вариант: <strong>1 оборот</strong>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section container" id="quad">
+  <div class="section-title">
+    <span>4 оборота</span>
+    <h2>Как выглядит четверной прыжок</h2>
+  </div>
+
+  <div class="quad-panel glass">
+    <div class="quad-panel__text">
+      <span class="badge badge--soft">Визуализация</span>
+      <h3>Четверной — это очень быстрое вращение в воздухе</h3>
+      <p>
+        Зрителю четверной прыжок кажется мгновенным. На самом деле фигурист
+        должен очень быстро собрать тело в плотную группировку, чтобы успеть
+        сделать 4 оборота до приземления.
+      </p>
+      <p>
+        В этой анимации видно, как вращение ускоряется и почему четверные
+        считаются вершиной прыжковой сложности.
+      </p>
+    </div>
+
+    <div class="quad-visual">
+      <div class="quad-air">
+        <div class="quad-shadow"></div>
+        <div class="quad-skater" id="quadSkater">⛸️</div>
+      </div>
+      <button class="btn btn--primary quad-btn" id="quadBtn" type="button">Запустить 4 оборота</button>
+    </div>
+  </div>
+</section>
     <section class="section container" id="facts">
       <div class="section-title">
         <span>Интересные факты</span>
@@ -369,16 +502,165 @@
     <p>Сделано с любовью к фигурному катанию ⛸</p>
   </footer>
   <script>
-    const cards = document.querySelectorAll('.jump-card, .info-card, .step, .compare-card, .fact-card, .record-card, .rotation-card, .stat-card');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add('is-visible');
-      });
-    }, { threshold: 0.14 });
-    cards.forEach((card, index) => {
-      card.style.transitionDelay = `${index % 6 * 70}ms`;
-      observer.observe(card);
+  const cards = document.querySelectorAll('.jump-card, .info-card, .step, .compare-card, .fact-card, .record-card, .rotation-card, .stat-card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add('is-visible');
     });
-  </script>
+  }, { threshold: 0.14 });
+
+  cards.forEach((card, index) => {
+    card.style.transitionDelay = `${index % 6 * 70}ms`;
+    observer.observe(card);
+  });
+
+  const jumpData = {
+    axel: {
+      badge: 'Аксель',
+      title: 'Самый узнаваемый прыжок',
+      text: 'Аксель начинается с движения вперёд. Именно поэтому его легче всего заметить даже новичку.',
+      type: 'рёберный',
+      sign: 'заход вперёд',
+      hint: '«разгон и взлёт»'
+    },
+    salchow: {
+      badge: 'Сальхов',
+      title: 'Прыжок с заметным махом',
+      text: 'Сальхов часто выглядит более раскрытым во входе. Перед отрывом хорошо заметен мах свободной ногой.',
+      type: 'рёберный',
+      sign: 'мах ногой перед отрывом',
+      hint: '«махнул — полетел»'
+    },
+    loop: {
+      badge: 'Риттбергер',
+      title: 'Плавный и собранный',
+      text: 'Риттбергер выполняется без помощи зубца. Часто он выглядит очень цельно и красиво, будто фигурист закручивает себя сам.',
+      type: 'рёберный',
+      sign: 'компактный вход без зубца',
+      hint: '«прыжок из скрутки»'
+    },
+    toe: {
+      badge: 'Тулуп',
+      title: 'Быстрый зубцовый прыжок',
+      text: 'Тулуп часто смотрится компактно и резко. Фигурист едет назад и помогает себе зубцом свободной ноги.',
+      type: 'зубцовый',
+      sign: 'есть укол зубцом',
+      hint: '«подколол лёд и взлетел»'
+    },
+    flip: {
+      badge: 'Флип',
+      title: 'Похож на лутц, но не совсем',
+      text: 'Флип часто путают с лутцем. Главное отличие — толчок идёт с внутреннего ребра.',
+      type: 'зубцовый',
+      sign: 'внутреннее ребро',
+      hint: '«внутрь — значит флип»'
+    },
+    lutz: {
+      badge: 'Лутц',
+      title: 'Длинный и эффектный заход',
+      text: 'Лутц часто выглядит очень эффектно: длинный заход назад, чёткий толчок и ощущение большой амплитуды.',
+      type: 'зубцовый',
+      sign: 'внешнее ребро и длинный заход',
+      hint: '«длинный заход — часто лутц»'
+    }
+  };
+
+  const jumpNodes = document.querySelectorAll('.jump-node');
+  const jumpInfo = document.getElementById('jumpInfo');
+
+  jumpNodes.forEach((node) => {
+    node.addEventListener('click', () => {
+      jumpNodes.forEach((item) => item.classList.remove('is-active'));
+      node.classList.add('is-active');
+
+      const data = jumpData[node.dataset.jump];
+      if (!data || !jumpInfo) return;
+
+      jumpInfo.innerHTML = `
+        <span class="mini-badge">${data.badge}</span>
+        <h4>${data.title}</h4>
+        <p>${data.text}</p>
+        <ul>
+          <li><strong>Тип:</strong> ${data.type}</li>
+          <li><strong>Главный признак:</strong> ${data.sign}</li>
+          <li><strong>Ассоциация:</strong> ${data.hint}</li>
+        </ul>
+      `;
+    });
+  });
+
+  const spinner = document.getElementById('skaterSpinner');
+  const spinButtons = document.querySelectorAll('.spin-btn');
+  const spinReadout = document.getElementById('spinReadout');
+
+  function setSpin(rotations) {
+    if (!spinner || !spinReadout) return;
+
+    spinner.classList.remove('spin-1', 'spin-2', 'spin-3', 'spin-4');
+    spinner.classList.add(`spin-${rotations}`);
+
+    let label = 'оборотов';
+    if (rotations === '1') label = 'оборот';
+    if (rotations === '2' || rotations === '3' || rotations === '4') label = 'оборота';
+
+    spinReadout.innerHTML = `Сейчас показан вариант: <strong>${rotations} ${label}</strong>`;
+  }
+
+  spinButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      spinButtons.forEach((item) => item.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      setSpin(btn.dataset.rotations);
+    });
+  });
+
+  setSpin('1');
+
+  const quadBtn = document.getElementById('quadBtn');
+  const quadSkater = document.getElementById('quadSkater');
+
+  if (quadBtn && quadSkater) {
+    quadBtn.addEventListener('click', () => {
+      quadSkater.classList.remove('quad-active');
+      void quadSkater.offsetWidth;
+      quadSkater.classList.add('quad-active');
+    });
+  }
+
+  const back = document.querySelector('.ice-layer--back');
+  const middle = document.querySelector('.ice-layer--middle');
+  const front = document.querySelector('.ice-layer--front');
+
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (back) back.style.transform = `translateY(${y * 0.08}px) scale(1.05)`;
+    if (middle) middle.style.transform = `translateY(${y * 0.14}px)`;
+    if (front) front.style.transform = `translateY(${y * 0.22}px)`;
+  });
+
+  const tiltCards = document.querySelectorAll('.jump-card, .info-card, .step, .compare-card, .fact-card, .record-card, .rotation-card');
+
+  tiltCards.forEach((card) => {
+    card.addEventListener('mousemove', (e) => {
+      if (window.innerWidth < 960) return;
+
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateY = (x - centerX) / 18;
+      const rotateX = (centerY - y) / 18;
+
+      card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+</script>
 </body>
 </html>
