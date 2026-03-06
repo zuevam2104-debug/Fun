@@ -13,7 +13,7 @@
 <body>
   <div class="page-bg"></div>
 
-  <header class="hero container">
+  <header class="hero container" id="top">
     <nav class="nav">
       <div class="logo">⛸ Ice Jump Guide</div>
       <a class="nav-btn" href="#jumps">Смотреть прыжки</a>
@@ -54,9 +54,14 @@
         <div class="skater-card glass">
           <div class="orbit orbit--1"></div>
           <div class="orbit orbit--2"></div>
-          <div class="skater">⛸</div>
-          <p>Секрет распознавания прыжков:</p>
-          <strong>смотри на толчок, ребро и направление.</strong>
+          <div class="spark spark--1"></div>
+          <div class="spark spark--2"></div>
+          <img class="hero-skate" src="skate.svg" alt="" />
+          <div class="hero-note">
+            <span class="mini-badge">Как распознавать</span>
+            <p>Секрет распознавания прыжков:</p>
+            <strong>смотри на толчок, ребро, направление и длину захода.</strong>
+          </div>
         </div>
       </div>
     </div>
@@ -67,6 +72,24 @@
       <div class="section-title">
         <span>Что важно понять сначала</span>
         <h2>Все прыжки отличаются тем, как фигурист отталкивается ото льда</h2>
+      </div>
+
+      <div class="intro-panel glass">
+        <div>
+          <span class="badge badge--soft">База для новичка</span>
+          <h3>Одинарный, двойной, тройной, четверной — что это значит?</h3>
+          <p>
+            Всё просто: это количество оборотов в воздухе. Одинарный прыжок — 1 оборот,
+            двойной — 2, тройной — 3, четверной — 4.
+            Чем больше оборотов, тем выше требования к скорости, силе толчка и плотности группировки.
+          </p>
+        </div>
+        <div class="rotation-grid">
+          <article class="rotation-card"><strong>1x</strong><span>Одинарный</span><p>База, с которой начинают учить технику.</p></article>
+          <article class="rotation-card"><strong>2x</strong><span>Двойной</span><p>Уже нужен более быстрый сбор корпуса.</p></article>
+          <article class="rotation-card"><strong>3x</strong><span>Тройной</span><p>Именно такие прыжки чаще всего кажутся зрителю «большими».</p></article>
+          <article class="rotation-card"><strong>4x</strong><span>Четверной</span><p>Максимальная сложность: высота, скорость и идеальный тайминг.</p></article>
+        </div>
       </div>
 
       <div class="info-grid">
@@ -286,19 +309,43 @@
       <div class="facts-grid">
         <article class="fact-card glass">
           <span>01</span>
-          <p>Аксель выделяется тем, что начинается с движения вперёд, поэтому в нём на пол-оборота больше, чем кажется.</p>
+          <p>Аксель начинается с движения вперёд, поэтому в нём всегда на пол-оборота больше, чем в других прыжках той же «категории».</p>
         </article>
         <article class="fact-card glass">
           <span>02</span>
-          <p>Названия многих прыжков произошли от фамилий фигуристов, которые их придумали или прославили.</p>
+          <p>Названия многих прыжков произошли от фамилий фигуристов: аксель, сальхов и лутц — это не случайные слова, а часть истории спорта.</p>
         </article>
         <article class="fact-card glass">
           <span>03</span>
-          <p>Для зрителя прыжок может длиться мгновение, но спортсмены годами учат правильный заход и приземление.</p>
+          <p>Для зрителя прыжок длится секунду, но спортсмены годами тренируют только заход, выезд и приземление, чтобы всё выглядело легко.</p>
         </article>
         <article class="fact-card glass">
           <span>04</span>
-          <p>Красота прыжка — это не только высота, но и лёгкость входа, чистое вращение в воздухе и мягкое приземление.</p>
+          <p>Красота прыжка — это не только высота. Очень ценятся тихое приземление, уверенный выезд и ощущение, будто элемент сделан «без усилий».</p>
+        </article>
+      </div>
+
+      <div class="section-title section-title--compact">
+        <span>Российские фигуристы и прыжки</span>
+        <h2>Громкие факты, рекорды и знаковые элементы</h2>
+      </div>
+
+      <div class="russian-facts">
+        <article class="record-card glass">
+          <div class="record-card__head"><span class="record-pill">Квадры</span><strong>Александра Трусова</strong></div>
+          <p>Известна как первая фигуристка, которая на международных соревнованиях чисто исполняла четверные тулуп, лутц и флип. Именно её часто связывают с началом «эры четверных» у женщин.</p>
+        </article>
+        <article class="record-card glass">
+          <div class="record-card__head"><span class="record-pill">Сложность</span><strong>Анна Щербакова</strong></div>
+          <p>Олимпийская чемпионка, которая исполняла четверные лутц и флип в соревнованиях. Её программы часто приводят как пример сочетания сложности прыжков и цельного катания.</p>
+        </article>
+        <article class="record-card glass">
+          <div class="record-card__head"><span class="record-pill">История</span><strong>Элизавета Туктамышева</strong></div>
+          <p>Одна из самых узнаваемых российских фигуристок по тройному акселю. На Skate America 2019 она в произвольной программе выполнила каскад 3A+2T и отдельный 3A — это редкий и очень зрелищный набор.</p>
+        </article>
+        <article class="record-card glass">
+          <div class="record-card__head"><span class="record-pill">Новое поколение</span><strong>Аделия Петросян</strong></div>
+          <p>ISU отмечает её как первую женщину, выполнившую четверной риттбергер на соревнованиях. Это один из самых редких и сложных четверных прыжков.</p>
         </article>
       </div>
     </section>
@@ -321,5 +368,17 @@
   <footer class="footer container">
     <p>Сделано с любовью к фигурному катанию ⛸</p>
   </footer>
+  <script>
+    const cards = document.querySelectorAll('.jump-card, .info-card, .step, .compare-card, .fact-card, .record-card, .rotation-card, .stat-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      });
+    }, { threshold: 0.14 });
+    cards.forEach((card, index) => {
+      card.style.transitionDelay = `${index % 6 * 70}ms`;
+      observer.observe(card);
+    });
+  </script>
 </body>
 </html>
